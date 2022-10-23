@@ -8,5 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 /* Делегирование события, ловим любой клик */
+/*
 document.addEventListener('click', ({target}) => {
 })
+*/

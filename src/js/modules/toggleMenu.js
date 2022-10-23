@@ -1,6 +1,7 @@
 import {jsToggleMenu, body} from '../utils/constants'
 
 export default function toggleMenu() {
+  if (!jsToggleMenu) return false
   jsToggleMenu.addEventListener('click', () => toggleClassMenu())
 }
 
