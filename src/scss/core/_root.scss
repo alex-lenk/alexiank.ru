@@ -1,6 +1,13 @@
 :root {
-  --al-body-color: #{$color};
+  --al-body-color: #{$textColor};
   --al-body-bg: #{$bgPrimary};
+  --al-font-sans-serif: 'ibm', -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --al-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --al-body-font-family: var(--al-font-sans-serif);
+  --al-font-bold: 'probold';
+  --al-body-font-size: 1rem;
+  --al-body-font-weight: 400;
+  --al-body-line-height: 1.4;
 /*
   --al-blue: #0d6efd;
   --al-indigo: #6610f2;
@@ -45,13 +52,8 @@
   --al-black-rgb: 0, 0, 0;
   --al-body-color-rgb: 33, 37, 41;
   --al-body-bg-rgb: 255, 255, 255;
-  --al-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --al-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --al-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --al-body-font-family: var(--al-font-sans-serif);
-  --al-body-font-size: 1rem;
-  --al-body-font-weight: 400;
-  --al-body-line-height: 1.5;
+
   --al-border-width: 1px;
   --al-border-style: solid;
   --al-border-color: #dee2e6;

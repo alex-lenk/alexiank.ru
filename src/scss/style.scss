@@ -1,9 +1,13 @@
+@import 'utils/mixin';
 @import 'utils/functions';
 @import 'utils/vars';
 @import 'core/root';
 @import 'core/fonts';
 @import 'core/reboot';
 @import 'core/typography';
+@import 'core/general';
+@import 'core/helpers';
+@import 'core/form';
 
 .app {
   display: flex;
