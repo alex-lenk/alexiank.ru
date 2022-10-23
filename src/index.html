@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-  'title': 'Главная'
+'title': 'Главная'
 })
 <body>
 <div class="app">
   <main class="main">
-    main
+    <div class="container-full">
+      <style>
+        .c-sc {
+          margin-bottom: 100px;
+          width: 400px;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .c-sc-item {
+          width: 100px;
+          height: 100px;
+          margin-right: 32px;
+          margin-bottom: 32px;
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 20px 20px rgba(16, 23, 34, 0.5);
+        }
+        .c-inputs {
+          padding: 32px;
+          border: 1px dashed #6D55FF;
+        }
+      </style>
+
+      <br>
+      <br>
+      <ol>
+        <li style="margin-bottom: 2rem"><img src="@img/logo/logo-ico.svg" alt=""></li>
+        <li style="margin-bottom: 2rem"><img src="@img/logo/logo-1.svg" alt=""></li>
+        <li style="margin-bottom: 2rem"><img src="@img/logo/logo-2.svg" alt=""></li>
+        <li style="margin-bottom: 2rem"><img src="@img/logo/logo-1-white.svg" alt=""></li>
+        <li style="margin-bottom: 2rem"><img src="@img/logo/logo-2-white.svg" alt=""></li>
+        <li style="margin-bottom: 2rem">
+          <div style="background-color: #fff; padding: 16px; display: inline-block">
+            <img src="@img/logo/logo-1-black.svg" alt="">
+          </div>
+        </li>
+        <li style="margin-bottom: 2rem">
+          <div style="background-color: #fff; padding: 16px; display: inline-block">
+            <img src="@img/logo/logo-2-black.svg" alt="">
+          </div>
+        </li>
+      </ol>
+
+
+      <div>
+      <h1>h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      </div>
+
+
+      <p class="text__large-extra">Пишу легкий, чистый &lt;code&gt;</p>
+      <p class="text__large">Пишу легкий, чистый &lt;code&gt;</p>
+      <p class="text__small">Пишу легкий, чистый &lt;code&gt;</p>
+      <p class="text__small-light">Пишу легкий, чистый &lt;code&gt;</p>
+
+
+      <h1>Color scheme</h1>
+
+      <ul class="c-sc list__un-styled">
+        <li class="c-sc-item" style="background-color: #5E92FD">$primary</li>
+        <li class="c-sc-item" style="background-color: #6D55FF">$primary2</li>
+        <li class="c-sc-item" style="background: linear-gradient(135deg, #5E92FD 0%, #6D55FF 100%)">$gradient</li>
+        <li class="c-sc-item" style="background-color: #F37A53">$secondary</li>
+        <li class="c-sc-item" style="background-color: #48B99C">$secondary2</li>
+        <li class="c-sc-item" style="background-color: #CA64BF">$secondary3</li>
+        <li class="c-sc-item" style="background-color: #D9DFE9;color: #151c28">$textColor</li>
+        <li class="c-sc-item" style="background-color: #848E9F">$textColor2</li>
+        <li class="c-sc-item" style="background-color: #4A4C61">$textColor3</li>
+        <li class="c-sc-item" style="background-color: #151c28;box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);">$bgPrimary</li>
+        <li class="c-sc-item" style="background-color: #fff">$white</li>
+        <li class="c-sc-item" style="background-color: rgba(16, 23, 34, 0.5);box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);">$bgDark</li>
+        <li class="c-sc-item" style="background-color: rgba(31, 42, 58, 0.5);box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);">$bgDarkStroke</li>
+        <li class="c-sc-item" style="background-color: rgba(25, 33, 48, 0.35);box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);">$bgDarkLight</li>
+        <li class="c-sc-item" style="background-color: rgba(38, 46, 63, 0.35);box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);">$bgDarkLightStroke</li>
+      </ul>
+
+
+      <div class="c-inputs">
+        <div class="form__group">
+          <input class="form__control" type="text" id="name" placeholder="Имя">
+          <label class="form__label" for="name">Имя</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__control form__filed" type="email" id="email" placeholder="E-mail">
+          <label class="form__label" for="email">Email</label>
+        </div>
+
+        <div class="form__group">
+          <textarea class="form__textarea" id="form-comment" placeholder="Опишите проект или задайте вопрос"></textarea>
+          <label class="form__label" for="form-comment">Комментарий</label>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+    </div>
   </main>
   @@include('html/footer.html', {})
 </div>
