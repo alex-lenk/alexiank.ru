@@ -1,3 +1,12 @@
-import * as flsFunctions from './modules'
+import * as flsFunctions from './modules/isWebp'
+import toggleMenu from './modules/toggleMenu'
 
-flsFunctions.isWebp()
+document.addEventListener('DOMContentLoaded', () => {
+  flsFunctions.isWebp()
+
+  toggleMenu()
+})
+
+/* Делегирование события, ловим любой клик */
+document.addEventListener('click', ({target}) => {
+})

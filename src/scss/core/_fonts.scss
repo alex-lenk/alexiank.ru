@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'probold';
+  font-family: $fontFamilyDin;
   font-display: swap;
   src: url('../fonts/dinprobold.woff2') format('woff2');
   font-weight: 700;
@@ -7,7 +7,15 @@
 }
 
 @font-face {
-  font-family: 'ibm';
+  font-family: $fontFamilyGeometria;
+  font-display: swap;
+  src: url('../fonts/geometria-medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $fontFamilyIbm;
   font-display: swap;
   src: url('../fonts/ibmplexmono.woff2') format('woff2');
   font-weight: 400;
@@ -15,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'ibm';
+  font-family: $fontFamilyIbm;
   font-display: swap;
   src: url('../fonts/ibmplexmonolight.woff2') format('woff2');
   font-weight: 300;

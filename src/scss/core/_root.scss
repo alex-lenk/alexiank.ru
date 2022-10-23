@@ -1,10 +1,10 @@
 :root {
   --al-body-color: #{$textColor};
   --al-body-bg: #{$bgPrimary};
-  --al-font-sans-serif: 'ibm', -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --al-font-sans-serif: #{$fontFamilyIbm}, -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --al-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --al-body-font-family: var(--al-font-sans-serif);
-  --al-font-bold: 'probold';
+  --al-font-bold: #{$fontFamilyDin};
   --al-body-font-size: 1rem;
   --al-body-font-weight: 400;
   --al-body-line-height: 1.4;

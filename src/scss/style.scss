@@ -8,6 +8,11 @@
 @import 'core/general';
 @import 'core/helpers';
 @import 'core/form';
+@import 'core/btn';
+
+/* components */
+@import 'components/header';
+@import 'components/social';
 
 .app {
   display: flex;
