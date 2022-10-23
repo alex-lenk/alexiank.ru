@@ -18,18 +18,17 @@ import { scss } from './gulp/tasks/scss.js'
 import { js } from './gulp/tasks/js.js'
 import { images } from './gulp/tasks/images.js'
 import { fontStyle } from './gulp/tasks/fonts.js'
-import { sprite } from './gulp/tasks/sprite.js'
+import { sprite, spriteCopy } from './gulp/tasks/sprite.js'
 
 // Наблюдатель за изменениями в файлах
 function watcher() {
-  gulp.watch(path.watch.favicons, favicons)
   gulp.watch(path.watch.html, html)
   gulp.watch(path.watch.scss, scss)
   gulp.watch(path.watch.js, js)
   gulp.watch(path.watch.images, images)
 }
 
-export { sprite }
+const sprites = gulp.series(sprite, spriteCopy)
 
 const mainTasks = gulp.series(gulp.parallel(fontStyle, favicons, html, scss, js, images))
 
@@ -38,5 +37,6 @@ const build = gulp.series(mainTasks)
 
 export { dev }
 export { build }
+export { sprites }
 
 gulp.task('default', dev)

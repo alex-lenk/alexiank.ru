@@ -11,11 +11,16 @@ export const sprite = () => {
     .pipe(svgSprite({
       mode: {
         stack: {
-          sprite: `../icons/icons.svg`,
+          sprite: `./icons.svg`,
           // Создавать страницу с перечнем иконок
-          example: true
-        },
+          example: true,
+        }
       },
     }))
-    .pipe(app.gulp.dest(`${app.path.build.images}`))
+    .pipe(app.gulp.dest(`${app.path.src.imagesSrc}`))
+}
+
+export const spriteCopy = () => {
+  return app.gulp.src(app.path.src.stackSrc)
+    .pipe(app.gulp.dest(app.path.build.stackBuild))
 }
