@@ -22,5 +22,5 @@ $error: #A40F45;
 
 
 $fontFamilyDin: 'din';
-$fontFamilyGeometria: 'geometria';
 $fontFamilyIbm: 'ibm';
+$familyDin: $fontFamilyDin, $fontFamilyIbm, Arial, sans-serif;

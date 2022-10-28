@@ -14,7 +14,8 @@
   --bs-btn-box-shadow: 0 20px 20px rgba(16, 23, 34, 0.5);
   --bs-btn-disabled-opacity: 0.65;
   --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
   font-family: var(--bs-btn-font-family);
   font-size: var(--bs-btn-font-size);

@@ -1,0 +1,18 @@
+@import './page__side';
+
+.page {
+  height: 100%;
+  display: flex;
+  background: url(../img/bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.page__content {
+  align-self: center;
+}
+
+@media (min-width: 1708px) {
+  .page {
+    padding-right: 230px;
+  }
+}

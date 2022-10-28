@@ -1,0 +1,81 @@
+.home {
+  display: flex;
+}
+
+.home__content {
+  max-width: 57%;
+}
+
+.home__name {
+  max-width: 284px;
+  height: 64px;
+  margin-bottom: 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary;
+  background-color: rgba($primary, .04);
+  border: 1px solid rgba(177, 203, 255, .04);
+}
+
+.home__title {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 100px;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.home__phrase {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.home__phrase-color {
+  color: $secondary;
+}
+
+.home__text {
+  margin-top: 16px;
+}
+
+.home__card {
+  height: 558px;
+  width: 488px;
+  margin-left: auto;
+
+  padding: 32px;
+  background-color: $bgDarkLight;
+  border: 1px solid $bgDarkLightStroke;
+  box-shadow: 0 30px 45px rgba(16, 23, 34, .35);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
+
+.home__card-top {
+  margin-bottom: 16px;
+  display: flex;
+  font-size: 20px;
+}
+
+.home__card-projects {
+  margin-right: auto;
+  font-family: $familyDin;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.home__card-container {
+  height: 446px;
+
+  padding: 32px;
+  background-color: $bgDark;
+  border: 1px solid $bgDarkStroke;
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+}
