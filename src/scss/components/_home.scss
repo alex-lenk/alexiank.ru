@@ -1,5 +1,6 @@
 .home {
   display: flex;
+  align-items: center;
 }
 
 .home__content {
@@ -44,11 +45,14 @@
   margin-top: 16px;
 }
 
-.home__card {
-  height: 558px;
-  width: 488px;
-  margin-left: auto;
+.home__portfolio {
+  min-width: 167px;
+}
 
+.home__card {
+  width: 40.1%;
+  flex: 0 0 auto;
+  margin-left: auto;
   padding: 32px;
   background-color: $bgDarkLight;
   border: 1px solid $bgDarkLightStroke;
@@ -71,11 +75,15 @@
 }
 
 .home__card-container {
-  height: 446px;
-
   padding: 32px;
   background-color: $bgDark;
   border: 1px solid $bgDarkStroke;
   backdrop-filter: blur(2px);
   border-radius: 8px;
+}
+
+.home__card-code {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 23px;
 }

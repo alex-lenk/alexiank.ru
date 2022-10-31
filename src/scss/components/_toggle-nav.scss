@@ -1,22 +1,21 @@
-.header__toggle {
+.toggle-nav {
   height: 32px;
   display: flex;
   cursor: pointer;
   position: relative;
   transition-duration: 1s;
 
-  .header__toggle-decor {
-    &:active {
-      background-color: $textColor2;
-      &::before,
-      &::after {
-        background-color: $textColor2
-      }
+  .toggle-nav__decor:active {
+    background-color: $textColor2;
+
+    &::before,
+    &::after {
+      background-color: $textColor2
     }
   }
 }
 
-.header__toggle-decor {
+.toggle-nav__decor {
   height: 3px;
   width: 24px;
   margin: auto;
@@ -49,8 +48,8 @@
 
 }
 
-.header__toggle--open {
-  .header__toggle-decor {
+.toggle-nav--open {
+  .toggle-nav__decor {
     transition-duration: .1s;
     transition-delay: .2s;
     background: 0 0;
@@ -76,7 +75,7 @@
 }
 
 @media (min-width: 768px) {
-  .header__toggle {
+  .toggle-nav {
     width: 88px;
     padding-left: 32px;
     padding-right: 32px;
@@ -84,7 +83,7 @@
 }
 
 @media (max-width: 768px) {
-  .header__toggle {
+  .toggle-nav {
     width: 56px;
     padding-left: 16px;
     padding-right: 16px;

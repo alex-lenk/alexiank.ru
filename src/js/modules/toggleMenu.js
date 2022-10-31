@@ -7,5 +7,5 @@ export default function toggleMenu() {
 
 function toggleClassMenu() {
   body.classList.toggle('nav__open')
-  jsToggleMenu.classList.toggle('header__toggle--open')
+  jsToggleMenu.classList.toggle('toggle-nav--open')
 }

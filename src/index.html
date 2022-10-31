@@ -5,38 +5,25 @@
 })
 <body>
 <main class="page">
-  <aside class="page__side">
-    <a href="/" class="page__side-logo">
-      <img src="@img/logo/logo-1.svg" alt="Александр Янковой - Frontend developer">
-    </a>
+  <nav class="panel">
+    <div class="panel__wrap container">
+      <a href="/" class="panel__logo"><img class="panel__logo-img" src="@img/logo/logo-2.svg" alt=""></a>
 
-    <nav class="menu">
-      <a href="#" class="menu__item page__side-link">Портфолио</a>
-      <a href="#" class="menu__item page__side-link">Навыки и опыт</a>
-      <a href="#" class="menu__item page__side-link">Контакты</a>
-      <a href="#" class="menu__item page__side-link">Блог</a>
-    </nav>
-
-    <div>
-      <a href="#" class="page__side-link">
-        <svg class="page__side-github">
-          <use href="@img/icons.svg#github"></use>
-        </svg>
-      </a>
+      <div class="toggle-nav js-toggle-nav">
+        <span class="toggle-nav__decor"></span>
+      </div>
     </div>
+  </nav>
 
-    <footer class="page__side-footer">
-      &copy;2015&mdash;2022
-      <div>Alex-yank.ru</div>
-      Фронтенд-разработчик
-    </footer>
-  </aside>
+  @@include('html/nav-menu.html')
 
   <div class="page__content container">
     <div class="home">
       <div class="home__content">
         <div class="home__name">Александр Янковой</div>
+
         <h1 class="home__title">Frontend developer</h1>
+
         <div class="home__phrase">
           Пишу легкий, чистый
           <span class="home__phrase-color">&lt;code&gt;</span>
@@ -46,7 +33,7 @@
           </div>
         </div>
 
-        <a href="portfolio.html" class="btn__primary btn">Портфолио</a>
+        <a href="portfolio.html" class="home__portfolio btn__primary btn">Портфолио</a>
       </div>
 
       <aside class="home__card">
@@ -63,6 +50,6 @@
   </div>
 </main>
 
-@@include('html/script.html', {})
+@@include('html/script.html')
 </body>
 </html>
