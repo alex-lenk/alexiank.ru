@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin hidePlaceholder {
   &::-moz-placeholder {
     @content;
@@ -11,4 +13,14 @@
   &::-webkit-input-placeholder {
     @content;
   }
+}
+
+@function get-vw($target, $maxBreakpoint) {
+  $vw-context: $maxBreakpoint * 0.01 * 1px;
+  @return math.div($target, $vw-context) * 1vw;
+}
+
+@function get-percent($target, $maxBreakpoint) {
+  $vw-context: $maxBreakpoint * 0.01 * 1px;
+  @return math.div($target, $vw-context) * 1%;
 }

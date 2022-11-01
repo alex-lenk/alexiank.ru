@@ -24,9 +24,6 @@
 .home__title {
   margin-bottom: 32px;
   font-weight: 700;
-  font-size: 100px;
-  line-height: 100px;
-  letter-spacing: .03em;
   text-transform: uppercase;
   color: $white;
 }
@@ -86,4 +83,18 @@
   margin-bottom: 0;
   font-size: 14px;
   line-height: 23px;
+}
+
+@media (min-width: 1100px) {
+  .home__title {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: .03em;
+  }
+}
+@media (max-width: 1099px) {
+  .home__title {
+    font-size: get-vw(80px, 1100);
+    line-height: get-vw(80px, 1100);
+  }
 }

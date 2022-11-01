@@ -9,9 +9,9 @@
 }
 
 .nav-menu__link {
+  height: 72px;
   margin-left: -30px;
   margin-right: -30px;
-  height: 72px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,9 +43,15 @@
   }
 }
 
+@media (max-height: 650px) {
+  .nav-menu__link {
+    height: 56px;
+  }
+}
+
 @media (max-width: 1509px) {
   .nav-menu {
-    padding: 70px 0 40px;
+    padding-top: 0;
     height: calc(100% - 70px);
     position: fixed;
     right: 0;
