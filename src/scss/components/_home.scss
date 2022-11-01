@@ -10,21 +10,17 @@
 }
 
 .home__content-title {
-  margin-bottom: 32px;
   text-transform: uppercase;
   color: $white;
-}
-
-.home__content-phrase {
-  margin-bottom: 40px;
 }
 
 .home__content-decor {
   color: $secondary;
 }
 
-.home__content-portfolio {
-  min-width: 167px;
+.home__content-btn {
+  width: 167px;
+  display: flex;
 }
 
 .home__card {
@@ -36,6 +32,7 @@
 }
 
 .home__card-top {
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -44,7 +41,6 @@
   margin-right: auto;
   font-family: $familyDin;
   font-weight: 700;
-  font-size: 20px;
 }
 
 .home__card-container {
@@ -58,6 +54,18 @@
   margin-bottom: 0;
   font-size: 14px;
   line-height: 23px;
+}
+
+@include media('>=576px') {
+  .home__content-title {
+    margin-bottom: 32px;
+  }
+  .home__content-phrase {
+    margin-bottom: 40px;
+  }
+  .home__card-projects {
+    font-size: 20px;
+  }
 }
 
 @include media('>=901px') {
@@ -96,23 +104,12 @@
     width: 40.1%;
     padding: 32px;
   }
-  .home__card-top {
-    margin-bottom: 16px;
-  }
   .home__card-container {
     padding: 32px;
   }
 }
 
 @include media('<=1099px') {
-  .home__content-name {
-    max-width: 228px;
-    height: 52px;
-  }
-  .home__content-title {
-    font-size: get-vw(80px, 1100);
-    line-height: get-vw(80px, 1100);
-  }
   .home__content-phrase {
     line-height: 28px;
   }
@@ -124,16 +121,54 @@
     max-width: 423px;
     padding: 24px;
   }
-  .home__card-top {
-    margin-bottom: 7px;
-  }
-  .home__card-container {
-    padding: 22px;
-  }
 }
 
 @include media('<=900px') {
   .home__content {
     margin-bottom: 48px;
+  }
+}
+
+@include media('<=575px') {
+  .home__content {
+    text-align: center;
+  }
+  .home__content-name {
+    max-width: 191px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__content-title {
+    margin-bottom: 24px;
+    font-size: get-vw(48px, 375);
+    line-height: get-vw(52px, 375);
+  }
+  .home__content-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home__card {
+    margin-bottom: 36px;
+  }
+  .home__card-container {
+    padding: 22px 12px 22px 16px;
+  }
+  .home__card-info {
+    font-size: 14px;
+  }
+}
+
+@include media('>=576px', '<=1099px') {
+  .home__content-name {
+    max-width: 228px;
+    height: 52px;
+  }
+  .home__content-title {
+    font-size: get-vw(80px, 1100);
+    line-height: get-vw(80px, 1100);
+  }
+  .home__card-container {
+    padding: 22px;
   }
 }

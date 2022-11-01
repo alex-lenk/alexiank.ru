@@ -13,8 +13,6 @@
 
 .panel__wrap {
   height: inherit;
-  padding-top: 16px;
-  padding-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -27,8 +25,27 @@
   max-height: 100%;
 }
 
-@include media('>=1510') {
+@include media('>=768px') {
+  .panel {
+    height: 70px;
+  }
+  .panel__wrap {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@include media('>=1510px') {
   .panel {
     display: none;
+  }
+}
+
+@include media('<=767px') {
+  .panel {
+    height: 52px;
+  }
+  .panel__logo {
+    height: 28px;
   }
 }

@@ -36,7 +36,6 @@
   &::after {
     top: 8px;
   }
-
 }
 
 .toggle-nav--open .toggle-nav__decor {
@@ -63,7 +62,7 @@
   }
 }
 
-@include media('>=768') {
+@include media('>=768px') {
   .toggle-nav {
     padding-left: 4px;
     padding-right: 4px;
@@ -73,8 +72,7 @@
 
 @include media('<=767px') {
   .toggle-nav {
-    width: 56px;
-    padding-left: 16px;
-    padding-right: 16px;
+    width: 42px;
+    margin-right: -8px;
   }
 }
