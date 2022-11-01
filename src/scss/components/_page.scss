@@ -9,13 +9,17 @@
   align-self: center;
 }
 
+@include media('>=1510px') {
+  .page__content {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
 @include media('>=1708px') {
   .page {
     padding-right: 230px;
   }
-}
-
-@include media('<=1509px') {
 }
 
 @include media('<=575px') {

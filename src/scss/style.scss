@@ -1,7 +1,7 @@
 @import 'libs/include-media';
 @import 'utils/mixin';
 @import 'utils/functions';
-@import 'utils/vars';
+@import 'src/scss/utils/variables';
 @import 'core/root';
 @import 'core/fonts';
 @import 'core/reboot';
@@ -19,4 +19,4 @@
 @import 'components/nav-menu';
 @import 'components/panel';
 @import 'components/home';
-@import 'components/portfolio__card';
+@import 'components/portfolio';

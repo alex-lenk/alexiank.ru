@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Портфолио - Александр Янковой - фронтенд разработчик'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <div class="page__content container">
+    <h1>Портфолио</h1>
+
+    <section class="portfolio">
+      <div class="portfolio__card">
+        <div class="portfolio__card-media">
+          <img src="@img/company-logo/wineexpress.svg" alt="">
+        </div>
+
+        <div class="portfolio__card-title">Wine Express</div>
+
+        <div class="portfolio__card-desc">
+          Интернет-витрина алкоголя, входит в холдинг одного из крупнейших винных импортеров Alianta Group.
+        </div>
+
+        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+          Посетить сайт
+        </div>
+
+        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+          <svg class="portfolio__card-icon">
+            <use href="@img/icons.svg#github-ico"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="portfolio__card">
+        <div class="portfolio__card-media">
+          <img src="@img/company-logo/alianta.svg" alt="">
+        </div>
+
+        <div class="portfolio__card-title">Alianta Group</div>
+
+        <div class="portfolio__card-desc">
+          Alianta Group является одним из ведущих импортеров на алкогольном рынке России.
+        </div>
+
+        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+          Посетить сайт
+        </div>
+
+        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+          <svg class="portfolio__card-icon">
+            <use href="@img/icons.svg#github-ico"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="portfolio__card">
+        <div class="portfolio__card-media">
+          <img src="@img/company-logo/mi-shop.svg" alt="">
+        </div>
+
+        <div class="portfolio__card-title">mi-shop</div>
+
+        <div class="portfolio__card-desc">
+          Интернет-магазин смартфонов Xiaomi и&nbsp;умных устройств для дома и&nbsp;не&nbsp;только
+        </div>
+
+        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+          Посетить сайт
+        </div>
+
+        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+          <svg class="portfolio__card-icon">
+            <use href="@img/icons.svg#github-ico"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="portfolio__card">
+        <div class="portfolio__card-media">
+          <img src="@img/company-logo/azro.svg" alt="">
+        </div>
+
+        <div class="portfolio__card-title">Аzro.studio</div>
+
+        <div class="portfolio__card-desc">
+          Digital-агентство в Дубае. Направления: цифровая стратегия, маркетинг, дизайн и разработка.
+        </div>
+
+        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+          Посетить сайт
+        </div>
+
+        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+          <svg class="portfolio__card-icon">
+            <use href="@img/icons.svg#github-ico"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>
