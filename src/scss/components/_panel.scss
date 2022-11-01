@@ -27,7 +27,7 @@
   max-height: 100%;
 }
 
-@media (min-width: 1510px) {
+@include media('>=1510') {
   .panel {
     display: none;
   }

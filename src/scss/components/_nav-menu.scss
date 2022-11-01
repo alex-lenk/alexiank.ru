@@ -36,7 +36,7 @@
   text-align: center;
 }
 
-@media (min-width: 1510px) {
+@include media('>=1510') {
   .nav-menu__logo {
     padding-left: 10px;
     padding-right: 10px;
@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 1509px) {
+@include media('<=1509px') {
   .nav-menu {
     padding-top: 0;
     height: calc(100% - 70px);
@@ -61,7 +61,7 @@
     transform: translateX(100%);
     transition: transform .2s ease-in-out;
     box-shadow: -30px 0px 45px $bgDark;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(4px);
 
     &::before {
       width: 100%;

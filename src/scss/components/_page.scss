@@ -9,15 +9,26 @@
   align-self: center;
 }
 
-@media (min-width: 1708px) {
+@include media('>=1708px') {
   .page {
     padding-right: 230px;
   }
 }
 
-@media (max-width: 1509px) {
+@include media('<=1509px') {
+  .page {
+    padding-bottom: 70px;
+  }
+}
+
+@include media('<=1099px') {
+  .page {
+    padding-top: 110px;
+  }
+}
+
+@include media('>=1100px','<=1509px') {
   .page {
     padding-top: 140px;
-    padding-bottom: 70px;
   }
 }
