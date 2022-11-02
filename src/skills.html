@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Портфолио - Александр Янковой - фронтенд разработчик'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+
+
+  <div class="skills page__content container">
+    <header class="skills__header">
+      <h1>Навыки и опыт</h1>
+
+      <ul class="tab__nav js-tab__nav list__un-styled">
+        <li class="tab__nav-item js-tab__nav-item tab__nav-item--active" data-tab="#tab__content-1">Навыки разработки</li>
+        <li class="tab__nav-item js-tab__nav-item" data-tab="#tab__content-2">Опыт работы</li>
+      </ul>
+    </header>
+
+    <section class="skills- tab__content tab__content--active" id="tab__content-1">
+      skills-
+    </section>
+
+    <section class="skills- tab__content" id="tab__content-2">
+      2 skills
+    </section>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>
