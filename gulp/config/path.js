@@ -16,7 +16,7 @@ export const path = {
     stackBuild: `${buildFolder}/assets/img/`,
   },
   src: {
-    js: `${srcFolder}/js/app.js`,
+    js: `${srcFolder}/js/index.js`,
     images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,webp}`,
     imagesSrc: `${srcFolder}/assets/`,
     svg: `${srcFolder}/assets/img/**/*.svg`,

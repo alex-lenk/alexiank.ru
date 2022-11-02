@@ -9,7 +9,7 @@ const path = {
 }
 
 export const webpackConfig = (isMode) => ({
-  entry: ['@babel/polyfill', `${path.src}/js/app.js`],
+  entry: [`${path.src}/js/index.js`],
   mode: isMode ? 'development' : 'production',
   cache: {
     type: 'filesystem', // По умолчанию 'memory'
