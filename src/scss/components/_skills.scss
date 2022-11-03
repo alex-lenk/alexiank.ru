@@ -1,0 +1,87 @@
+.skills__header {
+  margin-bottom: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.skills__header-title {
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.skills__container {
+  height: 629px; // @todo
+
+  padding: 48px;
+  line-height: 1;
+  background-color: $bgDark;
+  border: 1px solid $bgDarkStroke;
+  box-shadow: 0 30px 45px $bgDark;
+  backdrop-filter: blur(2px);
+}
+
+.skills__container-inner {
+  height: 100%;
+  padding-bottom: 8px;
+  overflow: hidden;
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.skills__percent {
+  margin-right: 72px;
+  padding-bottom: 20px;
+  height: 100%;
+  display: inline-flex;
+  text-align: right;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  &::before {
+    width: 1px;
+    height: 95%;
+    background-color: #30313F;
+    position: absolute;
+    top: 0;
+    right: -24px;
+    content: '';
+  }
+}
+
+.skills__percent-item {
+  color: $white;
+  position: relative;
+
+  &::before {
+    width: 1057px;
+    height: 1px;
+    top: 6px;
+    left: 49px;
+    border-top: 1px dashed #212230;
+    position: absolute;
+    content: '';
+  }
+}
+
+.skills__progress {
+  width: 64px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+
+  &::before {
+    height: 100%;
+    background: $gradient;
+    border-radius: 4px 4px 0 0;
+    display: block;
+    content: '';
+  }
+}
+
+.skills__progress-text {
+  position: absolute;
+  bottom: -7px;
+  width: 100%;
+}
