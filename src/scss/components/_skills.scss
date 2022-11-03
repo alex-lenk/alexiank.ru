@@ -1,15 +1,4 @@
-.skills__header {
-  margin-bottom: 64px;
-  display: flex;
-  align-items: center;
-}
-
-.skills__header-title {
-  margin-right: auto;
-  margin-bottom: 0;
-}
-
-.skills__container {
+.skills {
   line-height: 1;
   background-color: $bgDark;
   border: 1px solid $bgDarkStroke;
@@ -39,13 +28,13 @@
 }
 
 @include media('>=1000px') {
-  .skills__container {
+  .skills {
     height: 629px;
     padding: 48px;
     display: flex;
   }
 
-  .skills__container-inner {
+  .skills__info {
     height: 100%;
     padding-bottom: 34px;
     overflow: hidden;
@@ -125,13 +114,13 @@
 }
 
 @include media('<=575px') {
-  .skills__container {
+  .skills {
     padding: 24px 16px;
   }
 }
 
 @include media('>=576px', '<=1099px') {
-  .skills__container {
+  .skills {
     padding: 39px;
   }
 }

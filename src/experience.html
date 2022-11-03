@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Мой опыт работы'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <div class="page__content container">
+    <h1>Мой опыт работы</h1>
+
+    <section class="experience">
+      <div class="experience__content">
+        <div class="experience__content-section">
+          <h2 class="text__white">Александр Янковой</h2>
+
+          <p class="text__color2">
+            Разработчик с&nbsp;10-летним опытом. Знаю особенности backend-разработки и&nbsp;учитываю их&nbsp;при
+            создании фронта.
+          </p>
+
+          <p class="text__color2">
+            Люблю разрабатывать новые проекты с&nbsp;нуля: сразу закладываю грамотную архитектуру и&nbsp;чувствую,
+            что делаю действительно крутое и&nbsp;полезное дело, за&nbsp;которое не&nbsp;будет стыдно.
+          </p>
+        </div>
+
+        <h3 class="text__white">Опыт работы</h3>
+
+        <ol class="experience__work list__un-styled">
+          <li class="experience__work-item">
+            <div class="experience__work-title">&#60;Full-stack разработчик&#62;</div>
+            <div class="experience__work-date">2021 - по настоящее время</div>
+            <div class="text__color2">
+              Частично занял должность backend-разработчика. Ставлю задачи подрядчикам и&nbsp;контролирую их&nbsp;выполнение.
+            </div>
+          </li>
+          <li class="experience__work-item">
+            <div class="experience__work-title"></div>
+            <div class="experience__work-date"></div>
+            <div class="text__color2">
+
+            </div>
+          </li>
+        </ol>
+      </div>
+
+      <aside class="experience__side">
+        <div class="experience__side-title">&#60;Проектов реализовано&#62;</div>
+
+        <div class="experience__side-content">
+          <div class="experience__side-num">350+</div>
+          <div class="experience__side-text">
+            За&nbsp;10&nbsp;лет разработал несколько сотен сайтов разной тематики и&nbsp;сложности:
+            интернет-магазины, сервисы, сайты-визитки, лендинги, блоги и&nbsp;др.
+          </div>
+        </div>
+      </aside>
+    </section>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>

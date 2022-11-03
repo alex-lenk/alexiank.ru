@@ -1,82 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('html/head.html', {
-'title': 'Портфолио - Александр Янковой - фронтенд разработчик'
+'title': 'Мои навыки'
 })
 <body>
 <main class="page">
   @@include('html/panel.html')
   @@include('html/nav-menu.html')
 
-  <div class="skills page__content container">
-    <header class="skills__header">
-      <h1 class="skills__header-title">Навыки и опыт</h1>
+  <div class="page__content container">
+    <h1>Мои навыки</h1>
 
-      <ul class="tab__nav js-tab__nav list__un-styled">
-        <li class="tab__nav-item js-tab__nav-item tab__nav-item--active" data-tab="#tab__content-1">Навыки разработки</li>
-        <li class="tab__nav-item js-tab__nav-item" data-tab="#tab__content-2">Опыт работы</li>
+    <div class="skills">
+      <ul class="skills__percent list__un-styled">
+        <li class="skills__percent-item">100%</li>
+        <li class="skills__percent-item">90%</li>
+        <li class="skills__percent-item">80%</li>
+        <li class="skills__percent-item">70%</li>
+        <li class="skills__percent-item">60%</li>
+        <li class="skills__percent-item">50%</li>
+        <li class="skills__percent-item">40%</li>
+        <li class="skills__percent-item">30%</li>
+        <li class="skills__percent-item">20%</li>
+        <li class="skills__percent-item">10%</li>
+        <li class="skills__percent-item">0</li>
       </ul>
-    </header>
 
-    <section class="skills- tab__content tab__content--active" id="tab__content-1">
-      <div class="skills__container">
-        <ul class="skills__percent list__un-styled">
-          <li class="skills__percent-item">100%</li>
-          <li class="skills__percent-item">90%</li>
-          <li class="skills__percent-item">80%</li>
-          <li class="skills__percent-item">70%</li>
-          <li class="skills__percent-item">60%</li>
-          <li class="skills__percent-item">50%</li>
-          <li class="skills__percent-item">40%</li>
-          <li class="skills__percent-item">30%</li>
-          <li class="skills__percent-item">20%</li>
-          <li class="skills__percent-item">10%</li>
-          <li class="skills__percent-item">0</li>
-        </ul>
+      <ol class="skills__info list__un-styled">
+        <li class="skills__progress" style="width: 45%;height: 45%">
+          <div class="skills__progress-text">React</div>
+        </li>
 
-        <ol class="skills__container-inner list__un-styled">
-          <li class="skills__progress" style="width: 45%;height: 45%">
-            <div class="skills__progress-text">React</div>
-          </li>
+        <li class="skills__progress" style="width: 35%;height: 35%">
+          <div class="skills__progress-text">Vue</div>
+        </li>
 
-          <li class="skills__progress" style="width: 35%;height: 35%">
-            <div class="skills__progress-text">Vue</div>
-          </li>
+        <li class="skills__progress" style="width: 45%;height: 45%">
+          <div class="skills__progress-text">Node</div>
+        </li>
 
-          <li class="skills__progress" style="width: 45%;height: 45%">
-            <div class="skills__progress-text">Node</div>
-          </li>
+        <li class="skills__progress" style="width: 65%;height: 65%">
+          <div class="skills__progress-text">JS</div>
+        </li>
 
-          <li class="skills__progress" style="width: 65%;height: 65%">
-            <div class="skills__progress-text">JS</div>
-          </li>
+        <li class="skills__progress" style="width: 70%;height: 70%">
+          <div class="skills__progress-text">Webpack</div>
+        </li>
 
-          <li class="skills__progress" style="width: 70%;height: 70%">
-            <div class="skills__progress-text">Webpack</div>
-          </li>
+        <li class="skills__progress" style="width: 80%;height: 80%">
+          <div class="skills__progress-text">Gulp</div>
+        </li>
 
-          <li class="skills__progress" style="width: 80%;height: 80%">
-            <div class="skills__progress-text">Gulp</div>
-          </li>
+        <li class="skills__progress" style="width: 85%;height: 85%">
+          <div class="skills__progress-text">Git</div>
+        </li>
 
-          <li class="skills__progress" style="width: 85%;height: 85%">
-            <div class="skills__progress-text">Git</div>
-          </li>
+        <li class="skills__progress" style="width: 90%;height: 90%">
+          <div class="skills__progress-text">CSS</div>
+        </li>
 
-          <li class="skills__progress" style="width: 90%;height: 90%">
-            <div class="skills__progress-text">CSS</div>
-          </li>
-
-          <li class="skills__progress" style="width: 95%;height: 95%">
-            <div class="skills__progress-text">HTML</div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="skills- tab__content" id="tab__content-2">
-      2 skills
-    </section>
+        <li class="skills__progress" style="width: 95%;height: 95%">
+          <div class="skills__progress-text">HTML</div>
+        </li>
+      </ol>
+    </div>
   </div>
 </main>
 
