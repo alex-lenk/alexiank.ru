@@ -51,7 +51,7 @@ p {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 768px) {
+@include media('>=768px') {
   h4 {
     font-size: 24px;
   }
@@ -60,7 +60,7 @@ p {
   }
 }
 
-@media (min-width: 1200px) {
+@include media('>=1100px') {
   h1 {
     font-size: 64px;
   }
@@ -72,7 +72,7 @@ p {
   }
 }
 
-@media (max-width: 575px) {
+@include media('<=575px') {
   h1 {
     font-size: 24px;
   }
@@ -88,7 +88,7 @@ p {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@include media('>=768px', '>=1199px') {
   h1 {
     font-size: 48px;
   }

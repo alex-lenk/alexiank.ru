@@ -3,6 +3,7 @@
   height: 52px;
   border: 1px solid $secondary2;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .tab__nav-item {
@@ -13,6 +14,7 @@
   display: inline-flex;
   align-items: center;
   cursor: default;
+  border-radius: inherit;
 
   &:not(.tab__nav-item--active) {
     cursor: pointer;
