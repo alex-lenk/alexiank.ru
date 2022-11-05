@@ -17,10 +17,10 @@ export const path = {
   },
   src: {
     js: `${srcFolder}/js/index.js`,
-    images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,gif,webp}`,
+    images: `${srcFolder}/assets/img/**/*.{jpg,jpeg,png,webp}`,
     imagesSrc: `${srcFolder}/assets/`,
     svg: `${srcFolder}/assets/img/**/*.svg`,
-    scss: `${srcFolder}/scss/style.scss`,
+    scss: `${srcFolder}/scss/styles.scss`,
     html: `${srcFolder}/*.html`,
     fonts: `${srcFolder}/assets/fonts/**/*.*`,
     favicons: `${srcFolder}/assets/favicons/**/*.*`,

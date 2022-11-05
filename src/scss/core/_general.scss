@@ -9,10 +9,6 @@
   margin-right: auto;
 }
 
-svg {
-  pointer-events: none;
-}
-
 @include media('>=576px') {
   .container-full,
   .container {
