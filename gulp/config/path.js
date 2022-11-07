@@ -13,7 +13,7 @@ export const path = {
     images: `${buildFolder}/assets/img/`,
     fonts: `${buildFolder}/assets/fonts/`,
     favicons: `${buildFolder}/assets/favicons/`,
-    stackBuild: `${buildFolder}/assets/img/`,
+    stackBuild: `${srcFolder}/assets/img/`,
   },
   src: {
     js: `${srcFolder}/js/index.js`,
