@@ -65,23 +65,19 @@
 
 .btn__primary {
   --bs-btn-color: #{$white};
-  --bs-btn-bg: #{$gradient};
+  --bs-btn-bg: #{$primary};
   --bs-btn-border-color: transparent;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #{$gradient};
+  --bs-btn-hover-bg: #{$primary-hover};
   --bs-btn-hover-border-color: transparent;
   --bs-btn-focus-shadow-rgb: transparent;
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #{$gradient};
+  --bs-btn-active-bg: #{$primary};
   --bs-btn-active-border-color: transparent;
   --bs-btn-active-shadow: transparent;
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #0d6efd;
   --bs-btn-disabled-border-color: #0d6efd;
-
-  &:hover {
-    opacity: .85;
-  }
 
   &:active {
     opacity: 1;
@@ -92,9 +88,9 @@
   --bs-btn-color: #{$primary};
   --bs-btn-bg: transparent;
   --bs-btn-border-color: #{$primary};
-  --bs-btn-hover-color: #{$primary2};
+  --bs-btn-hover-color: #{$primary-hover};
   --bs-btn-hover-bg: transparent;
-  --bs-btn-hover-border-color: #{$primary2};
+  --bs-btn-hover-border-color: #{$primary-hover};
   --bs-btn-active-color: #{$primary};
   --bs-btn-active-bg: transparent;
   --bs-btn-active-border-color: #{$primary};

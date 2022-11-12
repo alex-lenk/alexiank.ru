@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Мои навыки'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <div class="page__content container">
+    <h1>Контакты</h1>
+
+    <div class="contacts">
+      <div class="contacts__text">
+        Вы&#160;можете связаться со&#160;мной заполнив форму ниже, по&#160;телефону или через мессенджеры.
+      </div>
+
+      <form class="contacts__form" action="#">
+        <div class="contacts__form-title text__large-extra">Связь со мной</div>
+
+        <div class="form__group">
+          <input class="form__control form__error" type="text" id="name" placeholder="Имя">
+          <label class="form__label" for="name">Имя</label>
+        </div>
+
+        <div class="form__group">
+          <input class="form__control form__filed" type="email" id="email" placeholder="E-mail">
+          <label class="form__label" for="email">Email</label>
+        </div>
+
+        <div class="form__group">
+          <textarea class="form__textarea" id="form-comment" placeholder="Опишите проект или задайте вопрос"></textarea>
+          <label class="form__label" for="form-comment">Комментарий</label>
+        </div>
+
+        <button class="btn__primary btn">Отправить</button>
+      </form>
+
+      <aside class="contacts__info">
+        <div class="contacts__info-container">
+          <div class="contacts__info-hot">
+            <a class="contacts__info-phone" href="tel:+7 (968) 740 96-46">+7 (968) 740-96-46</a>
+
+            <div class="social list__un-styled">
+              <a href="#" class="social__item" target="_blank" rel="nofollow">
+                <svg class="social__icon"><use href="@img/icons.svg#tg"></use></svg>
+              </a>
+              <a href="#" class="social__item" target="_blank" rel="nofollow">
+                <svg class="social__icon"><use href="@img/icons.svg#ws"></use></svg>
+              </a>
+            </div>
+          </div>
+
+          <a href="mailto:Alex-yank@yandex.ru" class="contacts__info-text">Alex-yank@yandex.ru</a>
+        </div>
+
+        <span class="contacts__info-text">г. Москва, ул. Поклонная, 3, вход Е1</span>
+      </aside>
+    </div>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>
