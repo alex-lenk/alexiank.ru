@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Страница не найдена - 404 ошибка'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <div class="page__content container">
+    <section class="not-found">
+      <div class="not-found__wrap">
+        <div class="not-found__error">404</div>
+        <h1 class="not-found__title">Страница не&nbsp;найдена</h1>
+        <button class="btn__primary btn">На главную</button>
+      </div>
+    </section>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>
