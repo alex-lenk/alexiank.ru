@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+'title': 'Блог'
+})
+<body>
+<main class="page">
+  @@include('html/panel.html')
+  @@include('html/nav-menu.html')
+
+  <div class="page__content container">
+    @@include('html/breadcrumb.html', {
+    "breadcrumbs": ['Блог']
+    })
+
+    <h1>Блог</h1>
+
+    <div class="blog">
+      <section class="blog__container">
+        <div class="blog__list">
+          <article class="blog__card">
+            <a href="article.html" class="blog__card-media"></a>
+
+            <div class="blog__card-content">
+              <div class="blog__card-meta">
+                <a href="#" class="blog__card-category">Vue-js</a>
+
+                <div class="blog__card-date">02.01.2022</div>
+              </div>
+
+              <h4 class="blog__card-title">
+                <a class="blog__card-link" href="article.html">Что такое Vuex? И зачем нужен vuex?</a>
+              </h4>
+
+              <div class="blog__card-text">
+                Что такое Vuex — это паттерн управления состоянием приложения и одновременно библиотека для Vue.js.
+              </div>
+
+              <div class="blog__card-tags">
+                <a href="#" class="blog__card-tag">#Vuex</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <a href="#" class="blog__card-media"></a>
+
+            <div class="blog__card-content">
+              <div class="blog__card-meta">
+                <a href="#" class="blog__card-category">JQuery</a>
+
+                <div class="blog__card-date">02.01.2022</div>
+              </div>
+
+              <h4 class="blog__card-title">
+                <a class="blog__card-link" href="article.html">Dropdown на jQuery - открытие и закрытие списков</a>
+              </h4>
+
+              <div class="blog__card-text">
+                Открытие и закрытие списков на jQuery.
+              </div>
+
+              <a href="#" class="blog__card-tag">#Dropdown</a>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <a href="#" class="blog__card-media"></a>
+
+            <div class="blog__card-content">
+              <div class="blog__card-meta">
+                <a href="#" class="blog__card-category">JavaScript</a>
+
+                <div class="blog__card-date">02.01.2022</div>
+              </div>
+
+              <h4 class="blog__card-title">
+                <a class="blog__card-link" href="article.html">Аккордеон на чистом JavaScript</a>
+              </h4>
+
+              <div class="blog__card-text">
+                Нашел и доработал JS скрипт аккордеон. Он прост и понятен и написан на чистом JavaScript.
+              </div>
+
+              <a href="#" class="blog__card-tag">#Accordion</a>
+            </div>
+          </article>
+
+          <article class="blog__card">
+            <a href="#" class="blog__card-media"></a>
+
+            <div class="blog__card-content">
+              <div class="blog__card-meta">
+                <a href="#" class="blog__card-category">JavaScript</a>
+
+                <div class="blog__card-date">02.01.2022</div>
+              </div>
+
+              <h4 class="blog__card-title">
+                <a class="blog__card-link" href="article.html">js TAB - ТАБы на чистом JavaScript</a>
+              </h4>
+
+              <div class="blog__card-text">
+                Реализация TAB на чистом JavaScript без jQuery плангинов и прочих зависимостей.
+              </div>
+
+              <a href="#" class="blog__card-tag">#TAB</a>
+            </div>
+          </article>
+        </div>
+
+        <nav class="pagination">
+          <a class="pagination__arrow pagination__arrow--prev" href="#">
+            <svg class="pagination__arrow-icon">
+              <use href="@img/icons.svg#arrow"></use>
+            </svg>
+          </a>
+
+          <span class="pagination__item pagination__item--current">1</span>
+          <a href="#" class="pagination__item">2</a>
+          <a href="#" class="pagination__item">3</a>
+          <a href="#" class="pagination__item">4</a>
+          <a href="#" class="pagination__item">5</a>
+          <a href="#" class="pagination__item">6</a>
+
+          <a class="pagination__arrow pagination__arrow--next" href="#">
+            <svg class="pagination__arrow-icon pagination__arrow-icon--next">
+              <use href="@img/icons.svg#arrow"></use>
+            </svg>
+          </a>
+        </nav>
+      </section>
+
+      <aside class="blog__side">
+        <div class="blog__boxed">
+          <h4 class="blog__boxed-title">Рубрики</h4>
+
+          <ul class="blog__boxed-list list__un-styled">
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">HTML</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">CSS</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">JavaScript</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">Vue.js</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">React.js</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">Node.js</a>
+            </li>
+            <li class="blog__boxed-item">
+              <a href="#" class="blog__boxed-link">JQuery</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="blog__side-box">
+          <h5 class="blog__side-title">Популярные темы</h5>
+
+          <div class="blog__tags">
+            <a href="#" class="blog__tags-item">#Dropdown</a>
+            <a href="#" class="blog__tags-item">#Accordion</a>
+            <a href="#" class="blog__tags-item"> #TAB</a>
+            <a href="#" class="blog__tags-item">#Vuex</a>
+            <a href="#" class="blog__tags-item">#Button</a>
+            <a href="#" class="blog__tags-item">#Input</a>
+            <a href="#" class="blog__tags-item">#Breadcrumbs</a>
+            <a href="#" class="blog__tags-item">#Multiselect</a>
+            <a href="#" class="blog__tags-item">#Search</a>
+          </div>
+        </div>
+
+        <div class="blog__side-box">
+          <h5 class="blog__side-title">Популярные статьи</h5>
+
+          <ul class="blog__articles list__un-styled">
+            <li class="blog__articles-item">
+              <a href="#" class="blog__articles-link">Что такое Vuex? И зачем нужен vuex?</a>
+            </li>
+
+            <li class="blog__articles-item">
+              <a href="#" class="blog__articles-link">Dropdown на jQuery - открытие и закрытие списков</a>
+            </li>
+
+            <li class="blog__articles-item">
+              <a href="#" class="blog__articles-link">Аккордеон на чистом JavaScript</a>
+            </li>
+
+            <li class="blog__articles-item">
+              <a href="#" class="blog__articles-link">js TAB - ТАБы на чистом JavaScript</a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+@@include('html/script.html')
+</body>
+</html>
