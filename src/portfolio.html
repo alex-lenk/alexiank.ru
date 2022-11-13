@@ -11,95 +11,204 @@
   <div class="page__content container">
     <h1>Портфолио</h1>
 
-    <section class="portfolio">
-      <div class="portfolio__card">
-        <div class="portfolio__card-media">
-          <img src="@img/company-logo/wineexpress.svg" alt="">
+    <div class="portfolio">
+      <section class="portfolio__card">
+        <div class="portfolio__card-top">
+          <div class="portfolio__card-media">
+            <img src="@img/company-logo/wineexpress.svg" alt="">
+          </div>
+
+          <div class="portfolio__card-content">
+            <div class="portfolio__card-title">Wine Express</div>
+
+            <div class="portfolio__card-desc">
+              Интернет-витрина алкоголя, входит в холдинг одного из крупнейших винных импортеров Alianta Group.
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio__card-title">Wine Express</div>
+        <div class="portfolio__stack stack">
+          <h5 class="portfolio__stack-title">Стек технологий</h5>
 
-        <div class="portfolio__card-desc">
-          Интернет-витрина алкоголя, входит в холдинг одного из крупнейших винных импортеров Alianta Group.
+          <ul class="stack__progress list__un-styled">
+            <li class="stack__progress-item stack__progress-scss" style="width: 11.1%;background-color: #C6538C;"></li>
+            <li class="stack__progress-item stack__progress-html" style="width: 11.1%;background-color: #E94929;"></li>
+            <li class="stack__progress-item stack__progress-css" style="width: 11.1%;background-color: #C6538C;"></li>
+            <li class="stack__progress-item stack__progress-js" style="width: 11.1%;background-color: #F1E05A;"></li>
+            <li class="stack__progress-item stack__progress-jsx" style="width: 11.1%;background-color: #61dafb;"></li>
+            <li class="stack__progress-item stack__progress-vue" style="width: 11.1%;background-color: #41B883;"></li>
+            <li class="stack__progress-item stack__progress-angular" style="width: 11.1%;background-color: #1976d2;"></li>
+            <li class="stack__progress-item stack__progress-node" style="width: 11.1%;background-color: #64DE64;"></li>
+            <li class="stack__progress-item stack__progress-php" style="width: 11.1%;background-color: #4F5B93;"></li>
+          </ul>
+
+          <ul class="stack__list list__un-styled">
+            <li class="stack__item stack__item--scss">
+              <svg style="fill:#fff;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              SCSS 11.1
+            </li>
+            <li class="stack__item stack__item--html">
+              <svg style="fill:#fff;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              HTML 11.1
+            </li>
+            <li class="stack__item stack__item--css">
+              <svg style="fill:#C6538C;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              CSS 11.1
+            </li>
+            <li class="stack__item stack__item--js">
+              <svg style="fill:#F1E05A;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              JavaScript 11.1
+            </li>
+            <li class="stack__item stack__item--jsx">
+              <svg style="fill:#61dafb;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              JSX 11.1
+            </li>
+            <li class="stack__item stack__item--vue">
+              <svg style="fill:#41B883;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              Vue 11.1
+            </li>
+            <li class="stack__item stack__item--angular">
+              <svg style="fill:#1976d2;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              Angular 11.1
+            </li>
+            <li class="stack__item stack__item--node">
+              <svg style="fill:#64DE64;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              Node 11.1
+            </li>
+            <li class="stack__item stack__item--php">
+              <svg style="fill:#4F5B93;" aria-hidden="true" height="16" viewBox="0 0 16 16" class="stack__item-icon">
+                <path d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+              </svg>
+              PHP 11.1
+            </li>
+          </ul>
         </div>
 
-        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
-          Посетить сайт
+        <div class="portfolio__card-footer">
+          <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+            Посетить сайт
+          </div>
+
+          <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+            <svg class="portfolio__card-icon">
+              <use href="@img/icons.svg#github-ico"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="portfolio__card">
+        <div class="portfolio__card-top">
+          <div class="portfolio__card-media">
+            <img src="@img/company-logo/alianta.svg" alt="">
+          </div>
+
+          <div class="portfolio__card-content">
+            <div class="portfolio__card-title">Alianta Group</div>
+
+            <div class="portfolio__card-desc">
+              Alianta Group является одним из ведущих импортеров на алкогольном рынке России.
+            </div>
+          </div>
         </div>
 
-        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
-          <svg class="portfolio__card-icon">
-            <use href="@img/icons.svg#github-ico"></use>
-          </svg>
-        </a>
-      </div>
-
-      <div class="portfolio__card">
-        <div class="portfolio__card-media">
-          <img src="@img/company-logo/alianta.svg" alt="">
+        <div class="portfolio__card-stack">
+          Стек технологий
         </div>
 
-        <div class="portfolio__card-title">Alianta Group</div>
+        <div class="portfolio__card-footer">
+          <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+            Посетить сайт
+          </div>
 
-        <div class="portfolio__card-desc">
-          Alianta Group является одним из ведущих импортеров на алкогольном рынке России.
+          <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+            <svg class="portfolio__card-icon">
+              <use href="@img/icons.svg#github-ico"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="portfolio__card">
+        <div class="portfolio__card-top">
+          <div class="portfolio__card-media">
+            <img src="@img/company-logo/mi-shop.svg" alt="">
+          </div>
+
+          <div class="portfolio__card-content">
+            <div class="portfolio__card-title">mi-shop</div>
+
+            <div class="portfolio__card-desc">
+              Интернет-магазин смартфонов Xiaomi и&nbsp;умных устройств для дома и&nbsp;не&nbsp;только
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
-          Посетить сайт
+        <div class="portfolio__card-stack">
+          Стек технологий
         </div>
 
-        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
-          <svg class="portfolio__card-icon">
-            <use href="@img/icons.svg#github-ico"></use>
-          </svg>
-        </a>
-      </div>
+        <div class="portfolio__card-footer">
+          <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+            Посетить сайт
+          </div>
 
-      <div class="portfolio__card">
-        <div class="portfolio__card-media">
-          <img src="@img/company-logo/mi-shop.svg" alt="">
+          <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+            <svg class="portfolio__card-icon">
+              <use href="@img/icons.svg#github-ico"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section class="portfolio__card">
+        <div class="portfolio__card-top">
+          <div class="portfolio__card-media">
+            <img src="@img/company-logo/azro.svg" alt="">
+          </div>
+
+          <div class="portfolio__card-content">
+            <div class="portfolio__card-title">Аzro.studio</div>
+
+            <div class="portfolio__card-desc">
+              Digital-агентство в Дубае. Направления: цифровая стратегия, маркетинг, дизайн и разработка.
+            </div>
+          </div>
         </div>
 
-        <div class="portfolio__card-title">mi-shop</div>
-
-        <div class="portfolio__card-desc">
-          Интернет-магазин смартфонов Xiaomi и&nbsp;умных устройств для дома и&nbsp;не&nbsp;только
+        <div class="portfolio__card-stack">
+          Стек технологий
         </div>
 
-        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
-          Посетить сайт
+        <div class="portfolio__card-footer">
+          <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
+            Посетить сайт
+          </div>
+
+          <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
+            <svg class="portfolio__card-icon">
+              <use href="@img/icons.svg#github-ico"></use>
+            </svg>
+          </a>
         </div>
-
-        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
-          <svg class="portfolio__card-icon">
-            <use href="@img/icons.svg#github-ico"></use>
-          </svg>
-        </a>
-      </div>
-
-      <div class="portfolio__card">
-        <div class="portfolio__card-media">
-          <img src="@img/company-logo/azro.svg" alt="">
-        </div>
-
-        <div class="portfolio__card-title">Аzro.studio</div>
-
-        <div class="portfolio__card-desc">
-          Digital-агентство в Дубае. Направления: цифровая стратегия, маркетинг, дизайн и разработка.
-        </div>
-
-        <div class="portfolio__card-btn btn__secondary btn js-ref" data-ref="#">
-          Посетить сайт
-        </div>
-
-        <a href="#" class="portfolio__card-github" rel="nofollow" target="_blank">
-          <svg class="portfolio__card-icon">
-            <use href="@img/icons.svg#github-ico"></use>
-          </svg>
-        </a>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </main>
 

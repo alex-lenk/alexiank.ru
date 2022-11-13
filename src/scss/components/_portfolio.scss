@@ -4,21 +4,28 @@
   border: 1px solid $bgDarkLightStroke;
   backdrop-filter: blur(2px);
   border-radius: 8px;
+}
+
+.portfolio__card-top {
+  margin-bottom: 32px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .portfolio__card-media {
+  order: 1;
+  flex-shrink: 0;
   padding: 32px;
-  margin-bottom: 24px;
   width: 128px;
   height: 128px;
   background: $bgDarkLight;
   border: 1px solid $bgDarkLightStroke;
   backdrop-filter: blur(2px);
   border-radius: 8px;
+}
+
+.portfolio__card-content {
+  padding-right: 24px;
+  flex-grow: 1;
 }
 
 .portfolio__card-title {
@@ -30,24 +37,34 @@
 }
 
 .portfolio__card-desc {
-  margin-bottom: 40px;
   line-height: 26px;
 }
 
-.portfolio__card-btn {
-  margin-top: auto;
+.portfolio__card-stack {
+  margin-bottom: 32px;
 }
 
-.portfolio__card-github {
-  right: 40px;
-  top: 40px;
-  position: absolute;
+.portfolio__card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__card-btn {
+  margin-right: auto;
 }
 
 .portfolio__card-icon {
   width: 40px;
   height: 40px;
   fill: $secondary;
+}
+
+.portfolio__stack {
+  margin-bottom: 32px;
+}
+
+.portfolio__stack-title {
+  margin-bottom: 16px;
 }
 
 @include media('>=576px') {
@@ -64,6 +81,20 @@
   }
   .portfolio__card-btn {
     min-width: 206px;
+  }
+}
+
+@include media('<=991px') {
+  .portfolio__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .portfolio__card-github {
+    right: 40px;
+    top: 40px;
+    position: absolute;
   }
 }
 
