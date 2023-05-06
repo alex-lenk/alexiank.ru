@@ -18,6 +18,10 @@
   color: $secondary;
 }
 
+.home__content-phrase {
+  margin-bottom: 40px;
+}
+
 .home__content-btn {
   width: 167px;
   display: flex;
@@ -59,9 +63,6 @@
 @include media('>=576px') {
   .home__content-title {
     margin-bottom: 32px;
-  }
-  .home__content-phrase {
-    margin-bottom: 40px;
   }
   .home__card-projects {
     font-size: 20px;
