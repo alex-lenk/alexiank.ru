@@ -1,7 +1,7 @@
 .portfolio__card {
   position: relative;
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   backdrop-filter: blur(2px);
   border-radius: 8px;
 }
@@ -17,8 +17,8 @@
   padding: 32px;
   width: 128px;
   height: 128px;
-  background: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   backdrop-filter: blur(2px);
   border-radius: 8px;
 }
@@ -56,7 +56,7 @@
 .portfolio__card-icon {
   width: 40px;
   height: 40px;
-  fill: $secondary;
+  fill: var(--al-secondary);
 }
 
 .portfolio__stack {

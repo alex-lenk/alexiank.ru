@@ -4,18 +4,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $primary;
-  background-color: rgba($primary, .04);
+  color: var(--al-primary);
+  background-color: var(--al-primary-home-name);
   border: 1px solid rgba(177, 203, 255, .04);
 }
 
 .home__content-title {
   text-transform: uppercase;
-  color: $white;
+  color: #fff;
 }
 
 .home__content-decor {
-  color: $secondary;
+  color: var(--al-secondary);
 }
 
 .home__content-phrase {
@@ -28,8 +28,8 @@
 }
 
 .home__card {
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   box-shadow: 0 30px 45px rgba(16, 23, 34, .35);
   backdrop-filter: blur(2px);
   border-radius: 8px;
@@ -43,13 +43,13 @@
 
 .home__card-projects {
   margin-right: auto;
-  font-family: $familyDin;
+  font-family: var(--al-font-din);
   font-weight: 700;
 }
 
 .home__card-container {
-  background-color: $bgDark;
-  border: 1px solid $bgDarkStroke;
+  background-color: var(--al-bg-dark);
+  border: 1px solid var(--al-bg-dark-stroke);
   backdrop-filter: blur(2px);
   border-radius: 8px;
 }
@@ -58,6 +58,10 @@
   margin-bottom: 0;
   font-size: 14px;
   line-height: 23px;
+}
+
+.home__content-text::before {
+  content: attr(data-decor);
 }
 
 @include media('>=576px') {

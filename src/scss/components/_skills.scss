@@ -1,7 +1,7 @@
 .skills {
   line-height: 1;
   background-color: $bgDark;
-  border: 1px solid $bgDarkStroke;
+  border: 1px solid var(--al-bg-dark-stroke);
   font-size: 14px;
   overflow: hidden;
 }

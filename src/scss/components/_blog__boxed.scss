@@ -2,8 +2,8 @@
   margin-bottom: 40px;
   padding: 32px;
   border-radius: 8px;
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   box-shadow: 0 30px 45px $bgDark;
   backdrop-filter: blur(2px);
 }
@@ -24,7 +24,7 @@
 }
 
 .blog__boxed-link {
-  color: $secondary;
+  color: var(--al-secondary);
   display: flex;
   align-items: center;
 
@@ -45,7 +45,7 @@
   }
 
   &:hover {
-    color: $secondary;
+    color: var(--al-secondary);
 
     &::before,
     &::after {

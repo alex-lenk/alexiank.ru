@@ -1,7 +1,7 @@
 .pagination {
   padding: 16px;
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   backdrop-filter: blur(2px);
   border-radius: 8px;
   display: flex;
@@ -11,8 +11,8 @@
 .pagination__arrow {
   width: 32px;
   height: 32px;
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   border-radius: 4px;
   display: flex;
 }

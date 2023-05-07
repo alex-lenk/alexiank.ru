@@ -1,6 +1,7 @@
 :root {
   --al-body-color: #{$textColor};
   --al-body-bg: #{$bgPrimary};
+  --al-font-din: #{$familyDin};
   --al-font-sans-serif: #{$fontFamilyIbm}, -apple-system, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --al-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --al-body-font-family: var(--al-font-sans-serif);
@@ -8,6 +9,15 @@
   --al-body-font-size: 1rem;
   --al-body-font-weight: 400;
   --al-body-line-height: 1.6;
+
+  --al-primary: #{$primary};
+  --al-secondary: #{$secondary};
+  --al-primary-home-name: #{$primaryHomeName};
+  --al-bg-dark-light: #{$bgDarkLight};
+  --al-bg-dark-light-stroke: #{$bgDarkLightStroke};
+  --al-bg-dark-stroke: #{$bgDarkStroke};
+  --al-bg-dark: #{$bgDark};
+
 /*
   --al-blue: #0d6efd;
   --al-indigo: #6610f2;
@@ -32,7 +42,6 @@
   --al-gray-700: #495057;
   --al-gray-800: #343a40;
   --al-gray-900: #212529;
-  --al-primary: #0d6efd;
   --al-secondary: #6c757d;
   --al-success: #198754;
   --al-info: #0dcaf0;

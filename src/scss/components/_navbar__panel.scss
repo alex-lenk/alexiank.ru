@@ -5,8 +5,8 @@
   left: 0;
   width: 100%;
   z-index: 5;
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   box-shadow: 0 15px 45px $bgDark;
   backdrop-filter: blur(2px);
 }

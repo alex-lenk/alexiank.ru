@@ -1,6 +1,6 @@
 .contacts__info {
-  background-color: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background-color: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   box-shadow: 0 30px 45px $bgDark;
   backdrop-filter: blur(2px);
   border-radius: 8px;

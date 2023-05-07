@@ -3,7 +3,7 @@
   width: 230px;
   padding: 40px 30px;
   background-color: rgba(25, 33, 48, .95);
-  border: 1px solid $bgDarkLightStroke;
+  border: 1px solid var(--al-bg-dark-light-stroke);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

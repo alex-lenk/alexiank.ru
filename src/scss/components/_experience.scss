@@ -29,7 +29,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
-  color: $secondary;
+  color: var(--al-secondary);
   font-family: $fontFamilyDin;
 
   &::before {
@@ -54,8 +54,8 @@
   width: 31.58%;
   flex: 0 0 auto;
   padding: 32px 24px;
-  background: $bgDarkLight;
-  border: 1px solid $bgDarkLightStroke;
+  background: var(--al-bg-dark-light);
+  border: 1px solid var(--al-bg-dark-light-stroke);
   border-radius: 8px;
   text-align: center;
 }
